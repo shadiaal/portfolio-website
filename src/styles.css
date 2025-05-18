@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+Background Gradient
+/* body {
+ background: linear-gradient(to right, #5a8168, #182d1a);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* Customizing Navbar */
+/* .navbar {
+  background-color: rgba(245, 240, 240, 0.7);
+} */
+
+/* .navbar a {
+  color: #fff !important;
+} */ 
+
+.navbar {
+  background-color: rgba(0, 30, 0, 0.9); 
+  backdrop-filter: blur(6px);
+}
+
+.navbar a {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #b6ffb6 !important; 
+}
+
+/* Hero Section */
+#home {
+  background: linear-gradient(to right, #486d56, #0a140b);
+}
+
+/* Section Headers */
+section h2 {
+  color: #162a1c;
+}
+
+/* Contact Form Button */
+button {
+  background-color: #162a1c;
+  border: none;
+  color: white;
+}
+
+button:hover {
+  background-color: #162a1c;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  scroll-behavior: smooth;
+}
+
+
+
+section h2 {
+  color: #162a1c;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+#contact {
+  background: linear-gradient(to right, #486d56, #0a140b);
+}

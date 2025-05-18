@@ -1,0 +1,89 @@
+
+
+.card {
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #1e3a2a;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.nav-btn.left {
+  left: 10px;
+}
+
+.nav-btn.right {
+  right: 10px;
+}
+
+.nav-btn:hover {
+  background-color: #14532d;
+}
+
+
+.carousel-container {
+  padding: 40px 0;
+  background-color: #fff;
+  text-align: center;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carousel-slide {
+  min-width: 100vw; /* عرض كامل الشاشة */
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(30, 58, 42, 0.6); /* لون خلفية شفاف */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
+
+  opacity: 0;           /* مخفية بشكل كامل */
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* تعطيل التفاعل مع الزر */
+}
+
+.carousel-wrapper:hover .nav-btn {
+  opacity: 1;           /* تظهر عند تحريك الماوس */
+  pointer-events: auto; /* تمكين التفاعل */
+  background-color: rgba(30, 58, 42, 0.9); /* خلفية أقل شفافية */
+}

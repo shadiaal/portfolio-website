@@ -1,0 +1,14 @@
+
+body,html {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+section {
+  padding-top: 80px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
