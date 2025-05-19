@@ -15,5 +15,27 @@
 </head>
 <body>
   <app-root></app-root>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    let lastScrollTop = 0;
+    const navbar = document.getElementById("mainNavbar");
+
+    window.addEventListener("scroll", function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop && scrollTop > 300) {
+        navbar.classList.add("navbar-hidden");
+        navbar.classList.remove("navbar-visible");
+      } else {
+        navbar.classList.add("navbar-visible");
+        navbar.classList.remove("navbar-hidden");
+      }
+
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+  });
+</script>
+
+
 </body>
 </html>
