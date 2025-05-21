@@ -8,28 +8,38 @@ import { CommonModule } from '@angular/common';
 })
 export class ProjectsComponent {
 
+projects = [
+{
+  title: 'Freelance Platform',
+  description: 'A full-stack platform that connects freelancers and clients with project management, real-time chat, and secure payments.',
+  technologies: '.NET Core, Angular, SQL Server, Firebase, BugSnag.',
+  image: 'assets/freelancer.jpg',
+  live: 'http://freelancerfrontend.s3-website.eu-north-1.amazonaws.com/home',
+  github: 'https://github.com/shadiaal/freelance_marketplace',
+  video: 'assets/freelancemarketplaceDemo.mp4'
+},
 
- projects = [
-    {
-      title: 'Freelance platform',
-      description: 'A full-stack web app that connects freelancers and clients, supporting complete project management with real-time chat, secure payments, and SMS notifications.',
-      Technologies:'.NET Core, Angular, MySQL, JWT, BugSnag.',
-      image: 'assets/freelancer.jpg',
-      link: 'http://freelancerfrontend.s3-website.eu-north-1.amazonaws.com/home'
-    },
-    {
-      title: 'Secure Link Website',
-      description: 'Built a website that uses AI to detect and evaluate phishing links, enhancing online security. Gained practical experience in AI, machine learning, and web development.',
-      Technologies:'HTML, CSS, Django, Python, Jupyter Notebook.',
-      image: 'assets/ai-generated.jpg',
-      link: 'https://github.com/your-github/project-2'
-    },
-    {
-      title: 'Health Informatics System ',
-      description: 'An integrated system with role-based dashboards for Admin, Doctor, and Patient to securely manage data and appointments. Features JWT authentication and real-time error monitoring with BugSnag.',
-      Technologies:'.NET Core, Angular, MySQL, JWT, BugSnag.',
-      image: 'assets/HealthSystem.png',
-      link: 'https://github.com/your-github/project-3'
-    }
-  ];
+ 
+ {
+  title: 'Health Informatics System',
+  description: 'A role-based system for managing health records and appointments with dashboards for Admins, Doctors, and Patients. Features JWT authentication and real-time error tracking with BugSnag.',
+  technologies: '.NET Core, Angular, MySQL, JWT, BugSnag.',
+  image: 'assets/HealthSystem.png',
+  github: 'https://github.com/shadiaal/Monthly_Project_1',
+  video: 'assets/HealthSystemDemo1.mp4'
+},
+
+
+ {
+  title: 'Secure Link Website',
+  description: 'An AI-based web app that detects and classifies phishing URLs using machine learning models trained on malicious data.',
+  technologies: 'HTML, CSS, Django, Python, Jupyter Notebook.',
+  image: 'assets/ai-generated.jpg',
+  github: 'https://github.com/shadiaal/Web_projects',
+  video: 'assets/SecureLinkeWebsite.mp4'
+}
+
+
+];
+
 }

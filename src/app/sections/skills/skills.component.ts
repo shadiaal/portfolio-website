@@ -68,14 +68,14 @@ import { CommonModule } from '@angular/common';
 })
 export class SkillsComponent implements OnInit, OnDestroy {
   currentSlide = 0;
-  intervalId!: number; // استخدام نوع number لتوافق setInterval في المتصفحات
+  intervalId!: number; 
 
   skills = [
-    { title: 'Programming', details: 'C++, Java, Python, JavaScript', icon: 'bi bi-cpu' },
-    { title: 'Web Development', details: 'HTML, CSS, Angular', icon: 'bi bi-window' },
-    { title: 'Frameworks', details: 'ASP.NET Core, TypeScript', icon: 'bi bi-layers' },
+    { title: 'Programming Languages', details: 'C++, Java, Python, JavaScript,C#', icon: 'bi bi-cpu' },
+    { title: 'Web Development', details: 'HTML, CSS, Angular,TypeScript', icon: 'bi bi-window' },
+    { title: 'Frameworks', details: 'ASP.NET Core, Angular', icon: 'bi bi-layers' },
     { title: 'Databases', details: 'MySQL, SQL Server', icon: 'bi bi-database' },
-    { title: 'Tools', details: 'VS Code, Git, GitHub, Jupyter', icon: 'bi bi-tools' },
+    { title: 'Tools', details: 'VS Code, Git, GitHub, Jupyter Notebook', icon: 'bi bi-tools' },
     { title: 'Soft Skills', details: 'Problem Solving, Communication, Teamwork', icon: 'bi bi-person-hearts' }
   ];
 
